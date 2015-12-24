@@ -135,6 +135,7 @@ class MapController: UIViewController,NSURLSessionDelegate,NSURLSessionDataDeleg
             self.showUserAndDestinationOnMap()
             
         })
+        // 100M以内
         if(distance < 100){
             //配送完了ボタン設置
             self.finishbutton()
@@ -363,6 +364,8 @@ class MapController: UIViewController,NSURLSessionDelegate,NSURLSessionDataDeleg
       
         //alertView表示
         alertView(self)
+        
+        
     }
     func getHttp(res:NSURLResponse?,data:NSData?,error:NSError?){
         
